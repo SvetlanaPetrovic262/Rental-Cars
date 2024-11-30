@@ -138,20 +138,20 @@ namespace RentalCars.Controllers
                 bookings.Add(new Booking()
                 {
                     BookingId =2,
-                    CarId = 4,
-                    UserId = 1,
+                    CarId = 1,
+                    UserId = 2,
                     StartDate = DateTime.Now.AddDays(2),
                     EndDate = DateTime.Now.AddHours(4),
-                    TotalPrice = 111,
+                    TotalPrice = 61,
 
                     Car = new Car()
                     {
-                        CarId = 4,
-                        Make = "Mercedes",
-                        Model = "M7",
-                        PricePerDay =55.5m,
+                        CarId = 1,
+                        Make = "Audi",
+                        Model = "A4",
+                        PricePerDay = 30.5m,
                         IsAvailable = true,
-                        ImageUrl = "mercedesyellow.jpg"
+                        ImageUrl = "audiblue.jpg"
                     }
                 });
             return bookings;

@@ -7,7 +7,7 @@ namespace RentalCars.Models
         public int BookingId { get; set; }
         [Required]
         public int CarId { get; set; }
-        public Car Car { get; set; }
+        public Car? Car { get; set; }
         public int UserId { get; set; }
 
         [Required]

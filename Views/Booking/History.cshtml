@@ -18,7 +18,7 @@
                 <p>End Date @booking.EndDate.ToShortDateString()</p>
                 <p>Total Price: $@booking.TotalPrice</p>
 
-                @Html.PartialAsync("_CarCard", booking.Car)
+                @await Html.PartialAsync("_CarCard", booking.Car)
             </div>
         }
         </div>
